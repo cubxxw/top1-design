@@ -1,0 +1,6 @@
+{"a":"semantic-signal-os","b":"abstract-orbit","winner":"semantic-signal-os","confidence":0.95,"criterion":"overall","evidence":["semantic-desktop.png","orbit-desktop.png"]}
+{"a":"abstract-orbit","b":"semantic-signal-os","winner":"semantic-signal-os","confidence":0.9,"criterion":"overall","evidence":["orbit-mobile.png","semantic-mobile.png"]}
+{"a":"semantic-signal-os","b":"editorial-intelligence","winner":"semantic-signal-os","confidence":0.8,"criterion":"goal_fit","evidence":["semantic-flow.png","editorial-flow.png"]}
+{"a":"editorial-intelligence","b":"semantic-signal-os","winner":"semantic-signal-os","confidence":0.75,"criterion":"specificity","evidence":["editorial-hero.png","semantic-hero.png"]}
+{"a":"abstract-orbit","b":"editorial-intelligence","winner":"editorial-intelligence","confidence":0.85,"criterion":"comprehension","evidence":["orbit-proof.png","editorial-proof.png"]}
+{"a":"editorial-intelligence","b":"abstract-orbit","winner":"editorial-intelligence","confidence":0.8,"criterion":"credibility","evidence":["editorial-mobile.png","orbit-mobile.png"]}

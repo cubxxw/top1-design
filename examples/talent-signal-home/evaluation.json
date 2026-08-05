@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "run_id": "talent-signal-home-001",
+  "target": "http://localhost:3000/",
+  "mode": "persuade",
+  "rubric_version": "1.0",
+  "threshold": 95,
+  "required_depth": 4,
+  "required_hard_gates": [
+    "functional",
+    "truth",
+    "accessibility",
+    "responsive",
+    "states",
+    "motion_safety",
+    "performance",
+    "seo"
+  ],
+  "nodes": [
+    {
+      "id": "home",
+      "parent_id": null,
+      "scope": "Talent Signal homepage",
+      "depth": 2,
+      "required": true,
+      "confidence": 0.95,
+      "scores": {
+        "goal_fit": 97,
+        "specificity": 96,
+        "hierarchy": 97,
+        "typography": 96,
+        "layout": 96,
+        "color_material": 95,
+        "interaction_states": 95,
+        "motion": 95,
+        "copy": 97
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true,
+        "seo": true
+      },
+      "evidence": [
+        "evidence/home-desktop.png",
+        "evidence/home-mobile.png"
+      ]
+    },
+    {
+      "id": "hero",
+      "parent_id": "home",
+      "scope": "Hero decision and live product proof",
+      "depth": 3,
+      "required": true,
+      "confidence": 0.9,
+      "scores": {
+        "goal_fit": 98,
+        "specificity": 97,
+        "hierarchy": 97,
+        "typography": 96,
+        "layout": 96,
+        "color_material": 95,
+        "interaction_states": 96,
+        "motion": 95,
+        "copy": 97
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true,
+        "seo": true
+      },
+      "evidence": [
+        "evidence/hero-desktop.png",
+        "evidence/hero-mobile.png",
+        "evidence/hero-interaction.webm"
+      ]
+    },
+    {
+      "id": "hero-message",
+      "parent_id": "hero",
+      "scope": "Hero category, value, and CTA",
+      "depth": 4,
+      "required": true,
+      "confidence": 0.9,
+      "scores": {
+        "goal_fit": 97,
+        "specificity": 96,
+        "hierarchy": 97,
+        "typography": 96,
+        "layout": 95,
+        "color_material": 95,
+        "interaction_states": 95,
+        "motion": 95,
+        "copy": 98
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true,
+        "seo": true
+      },
+      "evidence": [
+        "evidence/hero-message-desktop.png",
+        "evidence/hero-message-mobile.png"
+      ]
+    },
+    {
+      "id": "hero-product",
+      "parent_id": "hero",
+      "scope": "Screenshot-to-action-card product interaction",
+      "depth": 4,
+      "required": true,
+      "confidence": 0.85,
+      "scores": {
+        "goal_fit": 98,
+        "specificity": 98,
+        "hierarchy": 96,
+        "typography": 95,
+        "layout": 96,
+        "color_material": 95,
+        "interaction_states": 97,
+        "motion": 96,
+        "copy": 95
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true,
+        "seo": true
+      },
+      "evidence": [
+        "evidence/import-rest.png",
+        "evidence/import-drag.png",
+        "evidence/action-card-proposed.png",
+        "evidence/action-card-confirmed.png"
+      ]
+    },
+    {
+      "id": "proof",
+      "parent_id": "home",
+      "scope": "Insight proof and customer evidence",
+      "depth": 3,
+      "required": true,
+      "confidence": 0.82,
+      "scores": {
+        "goal_fit": 95,
+        "specificity": 96,
+        "hierarchy": 94,
+        "typography": 95,
+        "layout": 93,
+        "color_material": 94,
+        "interaction_states": 92,
+        "motion": 90,
+        "copy": 94
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true,
+        "seo": true
+      },
+      "evidence": [
+        "evidence/proof-desktop.png",
+        "evidence/proof-mobile.png"
+      ]
+    }
+  ]
+}

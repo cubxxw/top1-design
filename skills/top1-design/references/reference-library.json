@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-05",
+  "notice": "URLs and observations only. Recapture before use. Raw third-party screenshots are local evidence and are not distributed.",
+  "references": [
+    {
+      "id": "granola-home",
+      "name": "Granola",
+      "url": "https://www.granola.ai/",
+      "mode": ["persuade", "operate"],
+      "scope": ["site", "page", "region", "interaction"],
+      "quality": ["comprehension", "credibility", "perception", "operation"],
+      "borrow": [
+        "Let authentic product behavior carry the hero.",
+        "Structure proof as a before, during, and after task narrative.",
+        "Use direct manipulation to make the product feel tangible."
+      ],
+      "avoid": [
+        "Do not copy brand assets, words, or exact drag choreography.",
+        "Do not add dragging when it does not explain the product."
+      ]
+    },
+    {
+      "id": "leonar-source",
+      "name": "Leonar Source",
+      "url": "https://www.leonar.app/features/leonar-source/",
+      "mode": ["persuade", "operate"],
+      "scope": ["page", "region", "component", "element", "state"],
+      "quality": ["perception", "operation"],
+      "borrow": [
+        "Use restrained borders, radii, tint, and hover response to make product UI feel finished.",
+        "Keep navigation, typography, and material details in one quiet system."
+      ],
+      "avoid": [
+        "Do not copy the exact card geometry or brand palette.",
+        "Do not use surface decoration to hide weak hierarchy."
+      ]
+    },
+    {
+      "id": "ron-design-lab",
+      "name": "RON Design Lab",
+      "url": "https://rondesignlab.com/",
+      "mode": ["persuade", "experience"],
+      "scope": ["site", "page", "region", "typography"],
+      "quality": ["specificity", "hierarchy", "typography", "layout"],
+      "borrow": [
+        "Use large editorial type as a compositional object, not merely a larger heading.",
+        "Let scale establish identity when content volume is low."
+      ],
+      "avoid": [
+        "Do not apply exhibition-scale type to dense operational workflows.",
+        "Do not sacrifice readability or mobile hierarchy for spectacle."
+      ]
+    },
+    {
+      "id": "attio-home",
+      "name": "Attio",
+      "url": "https://attio.com/",
+      "mode": ["persuade", "operate"],
+      "scope": ["site", "page", "region", "component"],
+      "quality": ["credibility", "perception"],
+      "borrow": [
+        "Use disciplined type hierarchy and restrained spacing.",
+        "Show high-fidelity product UI immediately after the promise.",
+        "Create a sense of product completion through consistent details."
+      ],
+      "avoid": [
+        "Do not clone the monochrome CRM aesthetic.",
+        "Do not show fake UI that the product cannot deliver."
+      ]
+    },
+    {
+      "id": "metaview-home",
+      "name": "Metaview",
+      "url": "https://www.metaview.ai/",
+      "mode": ["persuade"],
+      "scope": ["site", "page", "region"],
+      "quality": ["comprehension", "credibility", "hierarchy"],
+      "borrow": [
+        "Resolve category, value, and product proof within the first viewport sequence.",
+        "Make a new AI category legible without a long explanation."
+      ],
+      "avoid": [
+        "Do not copy its dark green visual world.",
+        "Do not compress unfamiliar value into unsupported slogans."
+      ]
+    },
+    {
+      "id": "common-room-signals",
+      "name": "Common Room Signals",
+      "url": "https://www.commonroom.io/product/signals/",
+      "mode": ["persuade", "operate"],
+      "scope": ["page", "region", "component", "data-visualization"],
+      "quality": ["comprehension", "credibility", "operation"],
+      "borrow": [
+        "Represent dispersed signals as recognizable people, events, and actions.",
+        "Prefer business semantics over abstract AI metaphors."
+      ],
+      "avoid": [
+        "Do not use generic orbital diagrams when the user needs causal business meaning.",
+        "Do not imply signal precision that the data cannot support."
+      ]
+    },
+    {
+      "id": "clay-home",
+      "name": "Clay",
+      "url": "https://www.clay.com/",
+      "mode": ["persuade", "experience"],
+      "scope": ["site", "page", "brand", "proof"],
+      "quality": ["specificity", "credibility", "perception"],
+      "borrow": [
+        "Build a coherent brand world that is hard to relabel.",
+        "Follow expressive identity quickly with concrete customer evidence."
+      ],
+      "avoid": [
+        "Do not let brand spectacle delay product understanding.",
+        "Do not reproduce proprietary illustration or motion language."
+      ]
+    },
+    {
+      "id": "juicebox-home",
+      "name": "Juicebox",
+      "url": "https://juicebox.ai/",
+      "mode": ["persuade", "operate"],
+      "scope": ["site", "page", "region", "interactive-demo"],
+      "quality": ["comprehension", "credibility", "operation"],
+      "borrow": [
+        "Use recruiting-specific category language.",
+        "Let an interactive product demonstration precede secondary explanation.",
+        "Place recognizable customer proof early."
+      ],
+      "avoid": [
+        "Do not copy the purple palette or product claims.",
+        "Do not use logos without permission."
+      ]
+    },
+    {
+      "id": "notion-product",
+      "name": "Notion",
+      "url": "https://www.notion.com/product",
+      "mode": ["persuade", "operate", "read"],
+      "scope": ["site", "page", "typography", "component"],
+      "quality": ["hierarchy", "typography", "layout"],
+      "borrow": [
+        "Use a compact, readable type system that remains friendly at high information density.",
+        "Keep hierarchy strong without ornamental complexity."
+      ],
+      "avoid": [
+        "Do not default to Notion-like monochrome minimalism for every productivity product.",
+        "Do not copy icons, illustration, or voice."
+      ]
+    }
+  ]
+}

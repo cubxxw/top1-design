@@ -1,0 +1,4 @@
+interface:
+  display_name: "TOP1 DESIGN: Aesthetic Singularity Engine"
+  short_description: "Recursive evidence-driven UI taste and design QA"
+  default_prompt: "Use $top1-design to turn this interface into an evidence-backed, recursively evaluated, release-ready design."

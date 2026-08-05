@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-08-05",
+  "tool": "Kimi WebBridge",
+  "session": "top1-design-research",
+  "group_title": "TOP1 Design 调研",
+  "notice": "The referenced images are local-only and ignored by Git. URLs, observations, and reproducible capture code are public.",
+  "captures": [
+    {
+      "id": "anthropic-frontend-design",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "local_path": ".research/captures/anthropic-frontend-design.png",
+      "purpose": "Skill structure and public documentation validation"
+    },
+    {
+      "id": "impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "local_path": ".research/captures/impeccable.png",
+      "purpose": "Persistent critique and browser workflow validation"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "local_path": ".research/captures/ui-ux-pro-max.png",
+      "purpose": "Searchable design-intelligence library validation"
+    },
+    {
+      "id": "open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "local_path": ".research/captures/open-design.png",
+      "purpose": "Local-first design workbench and template ecosystem validation"
+    },
+    {
+      "id": "vercel-web-design-guidelines",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+      "local_path": ".research/captures/vercel-web-design-guidelines.png",
+      "purpose": "Deterministic interface audit Skill validation"
+    },
+    {
+      "id": "granola-home",
+      "url": "https://www.granola.ai/",
+      "local_path": ".research/captures/granola-home/capture-2026-08-05T074923+0000.png",
+      "sha256": "3d6f354fcdf44641ac42dcfee90b99b9894f9a83f30cfcc830ca341e7e45527b",
+      "purpose": "Whole-page hierarchy and product-as-proof reference"
+    },
+    {
+      "id": "leonar-source",
+      "url": "https://www.leonar.app/features/leonar-source/",
+      "local_path": ".research/captures/leonar-source/capture-2026-08-05T074936+0000.png",
+      "sha256": "cd639010be2bcef6f9f98b78013f3b45a8fdb8146bd3de327b6cb7b263462ed3",
+      "purpose": "Recruiting category, navigation, border, surface, and product-card reference"
+    },
+    {
+      "id": "ron-design-lab",
+      "url": "https://rondesignlab.com/",
+      "local_path": ".research/captures/ron-design-lab/capture-2026-08-05T074942+0000.png",
+      "sha256": "5076e94a8638d708c6ba8da8790ac8e8129d0dfdc57df10062c0db403c4c1aef",
+      "purpose": "Editorial scale and large-type composition reference"
+    },
+    {
+      "id": "attio-home",
+      "url": "https://attio.com/",
+      "local_path": ".research/captures/attio-home/capture-2026-08-05T075338+0000.png",
+      "sha256": "9c07677a9fd43ab4537ec6f701d0fc0e2c7a61fa14f07902e7a3698064e6ea73",
+      "purpose": "Product-completion and restrained hierarchy reference",
+      "status": "Animation-dependent first viewport; do not use this still as a settled-state baseline"
+    },
+    {
+      "id": "metaview-home",
+      "url": "https://www.metaview.ai/",
+      "local_path": ".research/captures/metaview-home/capture-2026-08-05T075009+0000.png",
+      "sha256": "a29b7b6ffb891ac36935da4c2c2ca363708ee0d09af618bf61f39d9fdfa55bfb",
+      "purpose": "Category, value, and product-proof sequencing reference"
+    },
+    {
+      "id": "common-room-signals",
+      "url": "https://www.commonroom.io/product/signals/",
+      "local_path": ".research/captures/common-room-signals/capture-2026-08-05T075037+0000.png",
+      "sha256": "fb7d03f495528437dae3448ab3143657190cc83997959d281b145833ce9450f4",
+      "purpose": "Semantic person-event-action signal model reference"
+    },
+    {
+      "id": "clay-home",
+      "url": "https://www.clay.com/",
+      "local_path": ".research/captures/clay-home/capture-2026-08-05T075116+0000.png",
+      "sha256": "ca52ddcc0d78e869c3adecfcce27d3421c29dc2c91166984f0fe2028962d68c5",
+      "purpose": "Distinctive brand world followed by proof reference"
+    },
+    {
+      "id": "juicebox-home",
+      "url": "https://juicebox.ai/",
+      "local_path": ".research/captures/juicebox-home/capture-2026-08-05T075142+0000.png",
+      "sha256": "5c20fdd22fa7bc0d2c3a87692dee0837e42f336d52fb36571bf186b5e05a73ad",
+      "purpose": "Recruiting AI category and interactive product demonstration reference"
+    },
+    {
+      "id": "notion-product",
+      "url": "https://www.notion.com/product",
+      "local_path": ".research/captures/notion-product/capture-2026-08-05T075203+0000.png",
+      "sha256": "77f867625617133bde123bf3cde39e49a3d8b1c3f36758a43e78d251327011dd",
+      "purpose": "Readable product typography and density reference"
+    }
+  ]
+}

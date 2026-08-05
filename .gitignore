@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Local browser evidence. Keep manifests and source cards, not third-party pixels.
+.research/captures/
+.top1-design/references/**/capture-*.png
+.top1-design/references/**/capture-*.jpg
+.top1-design/references/**/capture-*.jpeg
+
+# Local run artifacts
+.top1-design/runs/
+.top1-design/tmp/
