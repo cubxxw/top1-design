@@ -21,25 +21,11 @@ Most design Skills are strong at one of four jobs:
 
 TOP1 DESIGN connects those jobs into one closed loop:
 
-```mermaid
-flowchart LR
-    A["Goal contract"] --> B["Reference evidence"]
-    B --> C["Generate diverse directions"]
-    C --> D["Blind pairwise tournament"]
-    D --> E["Implement winner"]
-    E --> F["Browser capture and flow replay"]
-    F --> G["Score scope × quality cells"]
-    G --> H{"Hard gates pass?"}
-    H -- "No" --> I["Repair highest-impact defect"]
-    I --> F
-    H -- "Yes, score < 95" --> I
-    H -- "Yes, score ≥ 95" --> J{"Required leaf depth reached?"}
-    J -- "No" --> K["Bisect the scope and descend"]
-    K --> F
-    J -- "Yes" --> L["Freeze baseline and release"]
-    L --> M["Scheduled drift checks"]
-    M --> F
-```
+[![TOP1 DESIGN architecture](docs/top1-design-architecture.png)](docs/top1-design-architecture.svg)
+
+Read the solid route from left to right: goal → acquired taste → blind choice → implementation → browser evidence → recursive gate. A score below 95 repairs one evidence-backed cell; a score at or above 95 descends to the next required scope; only passing every required leaf freezes a release baseline. The dashed route is the later scheduled drift observer.
+
+[Open the editable Excalidraw source](docs/top1-design-architecture.excalidraw) or import it directly into [Excalidraw](https://excalidraw.com/).
 
 ## The two-tree model
 
@@ -64,9 +50,24 @@ The scope tree is recursively bisected into at most two coherent children. The w
 - `examples/` — realistic evaluation and pairwise tournament fixtures.
 - `tests/` — deterministic tests for the scoring and ranking engines.
 
-## Quick start
+## Use it by talking to your agent
 
-Install the Skill with any Agent Skills-compatible installer:
+Yes: giving the goal directly to an AI agent is the recommended interface. The Skill owns the procedure; your prompt should add the product-specific truth that the Skill cannot know.
+
+If TOP1 DESIGN may not be installed, give your agent this:
+
+> Check whether the `top1-design` Skill is available. If it is missing, install it from `https://github.com/cubxxw/top1-design` using your available Skill installer, inspect what will be installed, and confirm that the Skill loads. Then use `$top1-design` to redesign `<target page or repository>` for `<target user>` so they can `<valuable outcome>`. You may inspect the current product, open reference sites in a real browser, create reversible branches, edit the scoped frontend, and run tests. Preserve truthful product behavior and existing user data. Run the complete reference, blind-comparison, browser-evidence, and recursive release protocol. A passing whole page is not completion: continue through the required sections, components, states, responsive layouts, and motion. Do not release until every required leaf and hard gate passes. Return the evidence, winning direction, remaining risks, and release status.
+
+If it is already installed, the shortest reliable prompt is:
+
+> Use `$top1-design` to redesign `<target>` for `<user>` so they can `<outcome>`. Build the reference library first, run a blinded direction tournament, then recurse from the whole experience to surfaces, sections, components, elements, states, responsive layouts, and motion. You may change `<authorized scope>` but must preserve `<invariants>`. Do not release until every required leaf and hard gate passes. Return the evidence, winning direction, remaining risks, and release status.
+
+Mentioning `$top1-design` explicitly is more deterministic than relying on implicit Skill discovery. Describing the target user, outcome, authority, and invariants is more useful than repeating every internal scoring step.
+
+<details>
+<summary>Manual installation and CLI fallback</summary>
+
+Use these only when your agent cannot install or operate the Skill for you.
 
 ```bash
 npx skills add cubxxw/top1-design --skill top1-design
@@ -74,16 +75,7 @@ npx skills add cubxxw/top1-design --skill top1-design
 
 Or copy `skills/top1-design` into your agent's Skills directory.
 
-Then ask:
-
-```text
-Use $top1-design to redesign this recruiting product landing page.
-Build the reference library first, run a blinded direction tournament,
-then recurse from the whole page to sections, components, states, and motion.
-Do not release until all required leaves pass.
-```
-
-Initialize the durable harness in an existing project:
+Initialize the durable harness:
 
 ```bash
 python skills/top1-design/scripts/init_harness.py /path/to/project
@@ -101,7 +93,7 @@ Rank a pairwise tournament:
 python skills/top1-design/scripts/rank_candidates.py examples/talent-signal-home/pairs.jsonl
 ```
 
-Capture a reference with the user's real browser and Kimi WebBridge:
+Capture a browser reference:
 
 ```bash
 python skills/top1-design/scripts/capture_reference.py \
@@ -109,7 +101,9 @@ python skills/top1-design/scripts/capture_reference.py \
   --output .top1-design/references
 ```
 
-The capture command never closes browser tabs. Raw screenshots are local evidence and should not be published unless their rights are clear.
+</details>
+
+The browser capture workflow never closes the user's tabs. Raw screenshots are local evidence and should not be published unless their rights are clear.
 
 ## Release rule
 
