@@ -10,6 +10,12 @@ The name is intentionally arrogant. The process is not. Every conclusion needs e
 
 > `95` is an internal promotion threshold, not a scientific claim of objective beauty. A surface that reaches 95 at one level must descend to the next required level.
 
+The first commercial wedge is deliberately narrower: **an automatic design
+final-review and redo Agent for AI website builders**. It understands a generated
+site, acquires relevant references, creates isolated alternatives, reviews
+desktop and mobile behavior, edits a supported repository, compares before and
+after, and repairs until the declared Release Bar passes.
+
 ## Why this exists
 
 Most design Skills are strong at one of four jobs:
@@ -43,11 +49,17 @@ The scope tree is recursively bisected into at most two coherent children. The w
 - `skills/top1-design/SKILL.md` — the installable Agent Skill.
 - `skills/top1-design/scripts/init_harness.py` — installs the persistent harness into a project.
 - `skills/top1-design/scripts/capture_reference.py` — captures real pages through Kimi WebBridge and records provenance.
+- `skills/top1-design/scripts/diagnose_project.py` — selects Greenfield, Rescue, or Governed mode and a safe mutation level from declared and repository evidence.
 - `skills/top1-design/scripts/rank_candidates.py` — ranks blinded pairwise comparisons.
 - `skills/top1-design/scripts/score_design.py` — computes node scores, confidence caps, hard gates, and promotion status.
+- `skills/top1-design/scripts/assess_release.py` — combines recursive scores with visual, interaction, responsive, accessibility, functional, and change-control evidence.
+- `skills/top1-design/scripts/assess_product_metrics.py` — verifies the four cohort-level commercial success targets without turning them into an aesthetic claim.
 - `skills/top1-design/references/` — scoring rubrics, browser protocol, ecosystem research, orchestration rules, and the seed taste library.
 - `skills/top1-design/assets/harness-template/` — project-local goal, taste, quality-tree, and evaluation templates.
-- `examples/` — realistic evaluation and pairwise tournament fixtures.
+- [`cubxxw/taste-view`](https://github.com/cubxxw/taste-view) — the independent
+  dogfood product site that turns the method into a visible compare → compile →
+  release experience.
+- `examples/` — realistic evaluation, release, cohort, and tournament fixtures.
 - `tests/` — deterministic tests for the scoring and ranking engines.
 
 ## Use it by talking to your agent
@@ -63,6 +75,35 @@ If it is already installed, the shortest reliable prompt is:
 > Use `$top1-design` to redesign `<target>` for `<user>` so they can `<outcome>`. Build the reference library first, run a blinded direction tournament, then recurse from the whole experience to surfaces, sections, components, elements, states, responsive layouts, and motion. You may change `<authorized scope>` but must preserve `<invariants>`. Do not release until every required leaf and hard gate passes. Return the evidence, winning direction, remaining risks, and release status.
 
 Mentioning `$top1-design` explicitly is more deterministic than relying on implicit Skill discovery. Describing the target user, outcome, authority, and invariants is more useful than repeating every internal scoring step.
+
+## What it can safely operate on
+
+Review and mutation are different products:
+
+| Target | Browser review | Automatic code change |
+|---|---|---|
+| any stable, accessible website | supported | only with a repository adapter |
+| React or Next.js + Tailwind + stable build | supported | first-release supported path |
+| React or Next.js with missing build/style evidence | supported when runnable | conditional, small patch only |
+| Vue, Nuxt, Svelte, static HTML, Webflow, unknown stack | supported when runnable | review-only until an adapter exists |
+
+The Agent diagnoses one of three postures:
+
+- **Greenfield:** broad isolated search and a new coherent direction.
+- **Rescue:** preserve validated product structure; repair tokens and shared
+  components before page-by-page polish.
+- **Governed:** audit first and produce small reversible patches that respect the
+  existing design system and release process.
+
+Run the diagnosis directly:
+
+```bash
+python skills/top1-design/scripts/diagnose_project.py /path/to/project \
+  --target-url http://localhost:3000/
+```
+
+Repository heuristics choose a safe posture; they do not prove company maturity
+or grant authority.
 
 <details>
 <summary>Manual installation and CLI fallback</summary>
@@ -87,10 +128,24 @@ Score an evaluation:
 python skills/top1-design/scripts/score_design.py examples/talent-signal-home/evaluation.json
 ```
 
+Assess the full Release Bar:
+
+```bash
+python skills/top1-design/scripts/assess_release.py \
+  examples/release-ready/release-manifest.json
+```
+
 Rank a pairwise tournament:
 
 ```bash
 python skills/top1-design/scripts/rank_candidates.py examples/talent-signal-home/pairs.jsonl
+```
+
+Assess a matched product pilot:
+
+```bash
+python skills/top1-design/scripts/assess_product_metrics.py \
+  examples/product-validation/cohort.json
 ```
 
 Capture a browser reference:
@@ -113,11 +168,34 @@ A design is releasable only when:
 - every hard gate passes;
 - confidence is high enough to support the score;
 - the required scope depth has been inspected;
-- desktop, mobile, keyboard, reduced-motion, loading, empty, error, and success states have evidence where relevant;
+- declared desktop, mobile, keyboard, accessibility, responsive, functional,
+  visual, interaction, reduced-motion, loading, empty, error, and success
+  coverage has current evidence where relevant;
+- no unresolved blocker or severe defect remains;
+- tests, authority, blast radius, and rollback readiness pass;
 - the design still serves the product goal and does not merely resemble a fashionable reference;
 - a stable visual baseline and decision ledger are stored.
 
+`assess_release.py` turns this definition into a deterministic, inspectable
+decision. The script verifies the record; browser and accessibility tools must
+produce the underlying evidence truthfully.
+
 There is no “one giant prompt” escape hatch.
+
+## Commercial success is a cohort result
+
+The initial product hypothesis succeeds only when a predeclared matched cohort
+meets all four targets:
+
+- at least 95% of eligible audited units have no unresolved blocker/severe visual
+  or interaction defect;
+- at least 90% of eligible projects reach their declared Release Bar;
+- at least 70% of all valid blinded comparisons, including ties in the
+  denominator, prefer the Taste Engine version;
+- matched human edit time falls by at least 50%.
+
+These are engineering quality, releasability, preference, and labor-saving
+claims. They are intentionally not “95% of sites become top-tier design.”
 
 ## Research lineage
 
