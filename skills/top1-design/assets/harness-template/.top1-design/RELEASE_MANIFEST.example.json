@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "run_id": "replace-me",
+  "evaluation": "EVALUATION.example.json",
+  "coverage": {
+    "required_check_families": [
+      "visual",
+      "interaction",
+      "responsive",
+      "accessibility",
+      "functional"
+    ],
+    "required_viewports": [
+      "desktop",
+      "mobile"
+    ],
+    "required_flows": [
+      "primary"
+    ],
+    "required_states": [
+      "default",
+      "focus",
+      "error",
+      "success"
+    ],
+    "required_accessibility_methods": [
+      "automated",
+      "keyboard"
+    ]
+  },
+  "checks": [
+    {
+      "id": "visual-primary-surface",
+      "family": "visual",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "interaction-default",
+      "family": "interaction",
+      "state": "default",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "interaction-focus",
+      "family": "interaction",
+      "state": "focus",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "interaction-error",
+      "family": "interaction",
+      "state": "error",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "interaction-success",
+      "family": "interaction",
+      "state": "success",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "responsive-desktop",
+      "family": "responsive",
+      "viewport": "desktop",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "responsive-mobile",
+      "family": "responsive",
+      "viewport": "mobile",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "accessibility-automated",
+      "family": "accessibility",
+      "method": "automated",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "accessibility-keyboard",
+      "family": "accessibility",
+      "method": "keyboard",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    },
+    {
+      "id": "functional-primary-flow",
+      "family": "functional",
+      "flow": "primary",
+      "status": "fail",
+      "required": true,
+      "evidence": []
+    }
+  ],
+  "defects": [],
+  "change_control": {
+    "within_authority": false,
+    "tests_passed": false,
+    "blast_radius_reviewed": false,
+    "rollback_ready": false
+  }
+}

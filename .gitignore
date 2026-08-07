@@ -13,3 +13,6 @@ __pycache__/
 # Local run artifacts
 .top1-design/runs/
 .top1-design/tmp/
+
+# Independent dogfood product repository
+examples/taste-view/

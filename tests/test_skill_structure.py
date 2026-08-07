@@ -22,6 +22,24 @@ class SkillStructureTests(unittest.TestCase):
         for relative in refs:
             self.assertTrue((SKILL.parent / relative).exists(), relative)
 
+    def test_release_and_diagnosis_scripts_ship_with_skill(self):
+        scripts = SKILL.parent / "scripts"
+        for name in (
+            "diagnose_project.py",
+            "assess_release.py",
+            "assess_product_metrics.py",
+        ):
+            self.assertTrue((scripts / name).is_file(), name)
+
+    def test_harness_includes_control_plane_templates(self):
+        harness = SKILL.parent / "assets/harness-template/.top1-design"
+        for name in (
+            "PROJECT_PROFILE.example.json",
+            "RELEASE_MANIFEST.example.json",
+            "PRODUCT_METRICS.example.json",
+        ):
+            self.assertTrue((harness / name).is_file(), name)
+
 
 if __name__ == "__main__":
     unittest.main()

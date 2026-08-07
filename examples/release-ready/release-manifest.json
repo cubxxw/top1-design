@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "run_id": "release-ready-001",
+  "evaluation": "evaluation.json",
+  "coverage": {
+    "required_check_families": [
+      "visual",
+      "interaction",
+      "responsive",
+      "accessibility",
+      "functional"
+    ],
+    "required_viewports": [
+      "desktop",
+      "mobile"
+    ],
+    "required_flows": [
+      "primary"
+    ],
+    "required_states": [
+      "default",
+      "focus",
+      "error",
+      "success"
+    ],
+    "required_accessibility_methods": [
+      "automated",
+      "keyboard"
+    ]
+  },
+  "checks": [
+    {
+      "id": "visual-primary-surface",
+      "family": "visual",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/desktop-default.png",
+        "evidence/mobile-default.png"
+      ]
+    },
+    {
+      "id": "interaction-default",
+      "family": "interaction",
+      "state": "default",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/default.trace.zip"
+      ]
+    },
+    {
+      "id": "interaction-focus",
+      "family": "interaction",
+      "state": "focus",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/focus.png"
+      ]
+    },
+    {
+      "id": "interaction-error",
+      "family": "interaction",
+      "state": "error",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/error.png"
+      ]
+    },
+    {
+      "id": "interaction-success",
+      "family": "interaction",
+      "state": "success",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/success.png"
+      ]
+    },
+    {
+      "id": "responsive-desktop",
+      "family": "responsive",
+      "viewport": "desktop",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/desktop-default.png"
+      ]
+    },
+    {
+      "id": "responsive-mobile",
+      "family": "responsive",
+      "viewport": "mobile",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/mobile-default.png"
+      ]
+    },
+    {
+      "id": "accessibility-automated",
+      "family": "accessibility",
+      "method": "automated",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/axe.json"
+      ]
+    },
+    {
+      "id": "accessibility-keyboard",
+      "family": "accessibility",
+      "method": "keyboard",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/keyboard.trace.zip"
+      ]
+    },
+    {
+      "id": "functional-primary-flow",
+      "family": "functional",
+      "flow": "primary",
+      "status": "pass",
+      "required": true,
+      "evidence": [
+        "evidence/primary-flow.trace.zip"
+      ]
+    }
+  ],
+  "defects": [
+    {
+      "id": "VIS-014",
+      "family": "visual",
+      "severity": "minor",
+      "status": "accepted_risk",
+      "evidence": [
+        "evidence/desktop-default.png"
+      ]
+    }
+  ],
+  "change_control": {
+    "within_authority": true,
+    "tests_passed": true,
+    "blast_radius_reviewed": true,
+    "rollback_ready": true
+  }
+}

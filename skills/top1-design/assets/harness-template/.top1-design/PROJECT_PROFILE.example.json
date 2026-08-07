@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "declared_stage": "auto",
+  "runtime": {
+    "target_url": "http://localhost:3000/",
+    "start_verified": false,
+    "primary_flow_verified": false
+  },
+  "boundaries": {
+    "design_system_locked": false,
+    "product_flow_locked": true,
+    "global_tokens_locked": false,
+    "authorized_paths": [
+      "src/",
+      "app/",
+      "components/"
+    ]
+  }
+}

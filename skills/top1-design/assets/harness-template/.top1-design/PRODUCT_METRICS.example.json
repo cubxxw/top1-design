@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "cohort_id": "replace-me",
+  "targets": {
+    "severe_defect_free_rate": 0.95,
+    "release_bar_rate": 0.9,
+    "blind_preference_rate": 0.7,
+    "human_edit_time_reduction": 0.5
+  },
+  "records": [
+    {
+      "run_id": "replace-me",
+      "eligible": true,
+      "audited_units": 1,
+      "severe_defect_free_units": 0,
+      "release_bar_met": false,
+      "blind_comparisons": {
+        "taste_engine_wins": 0,
+        "control_wins": 0,
+        "ties": 0
+      },
+      "human_edit_minutes": {
+        "baseline": 1,
+        "taste_engine": 1
+      }
+    }
+  ]
+}

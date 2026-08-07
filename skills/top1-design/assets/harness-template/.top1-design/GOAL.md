@@ -40,12 +40,21 @@ Version: 1
 
 ## Scope
 
+- Project stage: auto | early | middle | late
+- Operating mode: pending diagnosis
+- Adapter status: pending diagnosis
+- Maximum authorized change level: 0
 - Required surfaces:
 - Required viewports:
 - Required states:
+- Required accessibility methods:
 - Primary flow:
 - Minimum scope depth: 3
 - Promotion threshold: 95
+
+The promotion threshold is not the Release Bar and is not an objective aesthetic
+success percentage. Declare the binary Release Bar coverage in the active run's
+`RELEASE_MANIFEST.json`.
 
 ## Hard gates
 
@@ -75,6 +84,18 @@ Agent must ask before:
 - purchasing services;
 - deleting data;
 - changing the product workflow beyond the approved goal.
+
+## Release Bar
+
+- Required visual scopes:
+- Required interaction states:
+- Required responsive viewports:
+- Required accessibility methods:
+- Required functional flows:
+- Maximum permitted unresolved severity: moderate
+- Tests:
+- Blast-radius review:
+- Rollback mechanism:
 
 ## Acceptance scenarios
 
