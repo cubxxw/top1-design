@@ -23,7 +23,15 @@ jobs:
         run: |
           python skills/top1-design/scripts/score_design.py \
             examples/talent-signal-home/evaluation.json > /tmp/score.json || test $? -eq 2
+      - name: Exercise release bar
+        run: |
+          python skills/top1-design/scripts/assess_release.py \
+            examples/release-ready/release-manifest.json > /tmp/release.json
       - name: Exercise tournament ranking
         run: |
           python skills/top1-design/scripts/rank_candidates.py \
             examples/talent-signal-home/pairs.jsonl > /tmp/ranking.json
+      - name: Exercise product metrics
+        run: |
+          python skills/top1-design/scripts/assess_product_metrics.py \
+            examples/product-validation/cohort.json > /tmp/product-metrics.json

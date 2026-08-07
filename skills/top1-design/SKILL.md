@@ -9,15 +9,22 @@ Operate as an evidence-driven design director and QA harness. Do not invent tast
 
 Treat `95` as a promotion threshold. Never call it objective beauty, and never stop at a passing parent when required child depth remains.
 
+The first commercial wedge is an automatic design final-review and redo Agent for AI-generated websites. Review any stable browser target; mutate only repositories whose adapter, build, test, authority, and rollback boundaries are verified.
+
 ## Start here
 
 1. Inspect the project, product truth, incumbent UI, available browser tools, tests, and existing design artifacts.
 2. Run `python <skill-dir>/scripts/init_harness.py <project-root>` when `.top1-design/` is absent. Preserve existing files unless the user authorizes replacement.
 3. Read `.top1-design/GOAL.md`, `.top1-design/TASTE.md`, and `.top1-design/QUALITY_TREE.json`.
-4. Fill missing facts from the user's request and repository. Ask only when a missing choice would materially change the product.
-5. Read the reference file that owns the current phase:
+4. Copy and complete `.top1-design/PROJECT_PROFILE.example.json` only when repository signals cannot establish stage, runtime, or locked-area facts.
+5. Run `scripts/diagnose_project.py` before reference acquisition or mutation. Record `greenfield`, `rescue`, or `governed` mode, review readiness, adapter status, and maximum change level.
+6. Fill missing facts from the user's request and repository. Ask only when a missing choice would materially change the product.
+7. Declare Release Bar coverage before implementation. Copy `.top1-design/RELEASE_MANIFEST.example.json` into the active run and list the required viewports, flows, states, and accessibility methods.
+8. Read the reference file that owns the current phase:
+   - maturity, adapter, and change granularity: `references/operating-modes.md`;
    - architecture and recursion: `references/architecture.md`;
    - score inputs and anchors: `references/scoring.md`;
+   - Release Bar and product metrics: `references/release-bar.md`;
    - browser capture and flow replay: `references/browser-protocol.md`;
    - reference acquisition: `references/reference-library.md`;
    - specialist Skill routing: `references/orchestration.md`;
@@ -99,6 +106,8 @@ python <skill-dir>/scripts/rank_candidates.py <pairs.jsonl>
 
 At lower scope levels, use 2–4 targeted variants. Increase search breadth only when the current direction is genuinely unresolved.
 
+Generate and break candidates in isolated workspaces. “Violence through volume” permits many experiments, not random churn in the user's main worktree. Land only the winning, reversible patch whose blast radius is enumerated.
+
 ## Evaluate with two trees
 
 Maintain two orthogonal structures:
@@ -162,6 +171,15 @@ Never average these away:
 - SEO-facing content is crawlable, unique, useful, and not generated only to manipulate ranking;
 - privacy, consent, analytics, and publishing actions stay within authority.
 
+Track visual, interaction, responsive, accessibility, and functional findings in the run's release manifest with severity and evidence. After the score report passes, run:
+
+```bash
+python <skill-dir>/scripts/assess_release.py \
+  <project-root>/.top1-design/runs/<run-id>/RELEASE_MANIFEST.json
+```
+
+Do not call a candidate releasable until this assessor returns `release_candidate`. A valid exit code `2` means continue repair; exit code `1` means repair the evidence record.
+
 ## Route specialist Skills without surrendering judgment
 
 Use `references/orchestration.md` to select specialists. Typical routing:
@@ -182,6 +200,7 @@ Write each run under `.top1-design/runs/<timestamp>/` and append the decision to
 Persist:
 
 - goal version;
+- diagnosis, operating mode, adapter status, and maximum change level;
 - evaluated commit and URL;
 - screenshots and state names;
 - score report;
@@ -209,12 +228,13 @@ Default scheduled jobs to proposal-only. Allow automatic edits only for determin
 Return:
 
 - outcome against the goal;
+- diagnosed mode, adapter status, and actual change level;
 - winning direction and borrowed principles;
 - required scope depth reached;
 - terminal node scores, confidence, and hard gates;
 - browser evidence and tested flows;
 - changes made;
 - remaining risks and next descent node;
-- whether the result is a release candidate or only an internal high score.
+- the `assess_release.py` result, not only an internal high score.
 
 Never claim “pixel perfect,” “95+,” or “TOP1” without an evaluation artifact that another reviewer can inspect.

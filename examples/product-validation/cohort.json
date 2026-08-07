@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "cohort_id": "pilot-001",
+  "targets": {
+    "severe_defect_free_rate": 0.95,
+    "release_bar_rate": 0.9,
+    "blind_preference_rate": 0.7,
+    "human_edit_time_reduction": 0.5
+  },
+  "records": [
+    {
+      "run_id": "pilot-project-01",
+      "eligible": true,
+      "audited_units": 20,
+      "severe_defect_free_units": 19,
+      "release_bar_met": true,
+      "blind_comparisons": {
+        "taste_engine_wins": 8,
+        "control_wins": 2,
+        "ties": 0
+      },
+      "human_edit_minutes": {
+        "baseline": 240,
+        "taste_engine": 100
+      }
+    },
+    {
+      "run_id": "pilot-project-02",
+      "eligible": true,
+      "audited_units": 20,
+      "severe_defect_free_units": 20,
+      "release_bar_met": true,
+      "blind_comparisons": {
+        "taste_engine_wins": 7,
+        "control_wins": 2,
+        "ties": 1
+      },
+      "human_edit_minutes": {
+        "baseline": 180,
+        "taste_engine": 80
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "run_id": "release-ready-001",
+  "target": "http://localhost:3000/",
+  "mode": "operate",
+  "rubric_version": "1.0",
+  "threshold": 95,
+  "required_depth": 1,
+  "required_hard_gates": [
+    "functional",
+    "truth",
+    "accessibility",
+    "responsive",
+    "states",
+    "motion_safety",
+    "performance"
+  ],
+  "nodes": [
+    {
+      "id": "desktop",
+      "parent_id": null,
+      "scope": "primary flow on desktop",
+      "depth": 1,
+      "required": true,
+      "confidence": 0.9,
+      "scores": {
+        "goal_fit": 97,
+        "specificity": 96,
+        "hierarchy": 97,
+        "typography": 96,
+        "layout": 96,
+        "color_material": 95,
+        "interaction_states": 97,
+        "motion": 95,
+        "copy": 96
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true
+      },
+      "evidence": [
+        "evidence/desktop-default.png",
+        "evidence/desktop-flow.zip"
+      ]
+    },
+    {
+      "id": "mobile",
+      "parent_id": null,
+      "scope": "primary flow on mobile",
+      "depth": 1,
+      "required": true,
+      "confidence": 0.9,
+      "scores": {
+        "goal_fit": 96,
+        "specificity": 96,
+        "hierarchy": 96,
+        "typography": 96,
+        "layout": 96,
+        "color_material": 95,
+        "interaction_states": 96,
+        "motion": 95,
+        "copy": 96
+      },
+      "hard_gates": {
+        "functional": true,
+        "truth": true,
+        "accessibility": true,
+        "responsive": true,
+        "states": true,
+        "motion_safety": true,
+        "performance": true
+      },
+      "evidence": [
+        "evidence/mobile-default.png",
+        "evidence/mobile-flow.zip"
+      ]
+    }
+  ]
+}
